@@ -23,11 +23,5 @@ for line in lines:
         counter += id
     counter_2 += np.prod(np.array([value for value in count_dict.values()]))
 
-
-
 print(counter)
 print(counter_2)
-
-
-    # check of het spel mogelijk is      
-            
