@@ -6,7 +6,7 @@ with open('input11.txt') as f:
 def l2_distance(x1, y1, x2, y2):
     return abs(x1 - x2) + abs(y1 - y2)
 
-def coords_after_expansion(coords: tuple[int, int], multiplier: int) -> tuple[int, int]:
+def coords_after_expansion(coords, multiplier):
     empty_cols_before = sum([1 for col in empty_cols if col < coords[0]])
     empty_rows_before = sum([1 for row in empty_rows if row < coords[1]])
     return (coords[0] + empty_cols_before * (multiplier - 1),
